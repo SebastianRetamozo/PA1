@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desarrollo Web</title>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@300;600&display=swap" rel="stylesheet">
+  <!-- Iconos web (Font Awesome) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Estilos -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header class="site-header">
+      <div class="header-content">
+        <img src="imagenes/logo.png" alt="Logo del Instituto" class="logo">
+        <div class="header-text">
+          <h1 class="header-title">Desarrollo Web</h1>
+          <p class="author">Desarrollado por Sebastian Retamozo</p>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="intro">
+        <h2 class="intro-title">Los pilares del desarrollo web</h2>
+        <p class="intro-description">
+          <strong><u>HTML, CSS y JavaScript:</u></strong> son los tres pilares fundamentales del desarrollo web. Cada uno cumple un rol esencial para crear páginas web dinámicas, interactivas y visualmente atractivas.
+        </p>
+        <p class="intro-instruction">Haz clic en cada tema para aprender más sobre él.</p>
+        <div class="intro-content">
+          <article class="intro-item html" onclick="redirectTo('HTML')">
+            <img src="imagenes/html.jpg" alt="HTML Logo" class="intro-image">
+            <h3>HTML</h3>
+            <p>HTML (HyperText Markup Language) es el lenguaje de marcado que define la estructura y el contenido de una página web. Es como los cimientos de una casa, proporcionando la base sobre la cual se construye todo lo demás.</p>
+          </article>
+          <article class="intro-item css" onclick="redirectTo('CSS')">
+            <img src="imagenes/css.jpg" alt="CSS Logo" class="intro-image">
+            <h3>CSS</h3>
+            <p>CSS (Cascading Style Sheets) es el lenguaje de estilos que controla la presentación visual de una página web. Desde colores y fuentes hasta diseños complejos, CSS transforma la estructura en algo hermoso y funcional.</p>
+          </article>
+          <article class="intro-item js" onclick="redirectTo('JavaScript')">
+            <img src="imagenes/js.jpg" alt="JavaScript Logo" class="intro-image">
+            <h3>JavaScript</h3>
+            <p>JavaScript es el lenguaje de programación que añade interactividad y dinamismo a las páginas web. Permite crear experiencias de usuario avanzadas, como animaciones, formularios interactivos y mucho más.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="definitions">
+        <article class="def-box html">
+          <h2>HTML (HyperText Markup Language):</h2>
+          <p>Es el lenguaje de marcado que define la estructura y el contenido de una página web. Utiliza etiquetas para delimitar diferentes elementos: párrafos, encabezados, imágenes, enlaces, etc.</p>
+        </article>
+        <article class="def-box css">
+          <h2>CSS (Cascading Style Sheets):</h2>
+          <p>Es un lenguaje de estilos que se utiliza para controlar la presentación de una página web: colores, fuentes, tamaños, márgenes, etc.</p>
+        </article>
+        <article class="def-box js">
+          <h2>JavaScript (Programming Language):</h2>
+          <p>Es un lenguaje de programación que permite agregar funcionalidad interactiva a una página web mediante la manipulación del DOM y eventos.</p>
+        </article>
+      </section>
+
+      <section class="analogy">
+        <h2>Analogía de la web y una casa:</h2>
+        <div class="analogy-container">
+          <article class="analogy-box html">
+            <h3>HTML</h3>
+            <p>HTML es como los cimientos, las paredes y la estructura de una casa. Define la base y la distribución de los espacios, como habitaciones, puertas y ventanas.</p>
+          </article>
+          <article class="analogy-box css">
+            <h3>CSS</h3>
+            <p>CSS es como la decoración y el diseño interior de una casa. Representa los colores de las paredes, los muebles, las cortinas y otros elementos visuales que hacen que la casa sea atractiva y acogedora.</p>
+          </article>
+          <article class="analogy-box js">
+            <h3>JavaScript</h3>
+            <p>JavaScript es como los sistemas inteligentes de una casa, como las luces automáticas, las puertas eléctricas y los termostatos inteligentes.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="icons-web">
+        <div class="icons-container">
+          <img src="imagenes/casa2.png" alt="Analogía de la web y una casa" class="icons-image">
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        <strong>RESUMEN:</strong> En esta página aprendimos sobre los pilares fundamentales del desarrollo web: 
+        <strong>HTML</strong>, que define la estructura y el contenido de una página web; 
+        <strong>CSS</strong>, que se encarga de la presentación visual y el diseño; y 
+        <strong>JavaScript</strong>, que añade interactividad y dinamismo. 
+        También exploramos cómo estos lenguajes trabajan juntos para crear experiencias web completas, 
+        desde la estructura básica hasta la funcionalidad avanzada. Además, implementamos funcionalidades 
+        como el modo oscuro y enlaces interactivos para aprender más sobre cada tema.
+      </p>
+    </footer>
+  </div>
+  <button id="darkModeToggle" class="dark-mode-btn">Modo Oscuro</button>
+  <script src="script.js"></script>
+</body>
+</html>
